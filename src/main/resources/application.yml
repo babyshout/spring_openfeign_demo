@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: demo
+  cloud:
+    openfeign:
+      httpclient:
+        connection-timeout: 5000
+        connection-timer-repeat: 7000
+        ok-http:
+          read-timeout: 300000
+
+
+server:
+  port: 11000
+
+naver:
+  papago:
+    clientId: 2ukD1qCAnMpgPfE9EY3O
+    clientSecret: zXkp9f_yO8
+logging:
+  level:
+    com:
+      example:
+        openfeign.demo: trace
